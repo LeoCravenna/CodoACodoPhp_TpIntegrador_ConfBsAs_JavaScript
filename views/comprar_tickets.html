@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+  <title>Comprar Ticket - Conf Bs As - Tp Integrador JS - Codo a Codo</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css" media="all" />
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css" media="all" />
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top colorNavbar">
+      
+      <div class="container-fluid">
+        <img src="../img/codoacodo.png" alt="Logo Codo a Codo" width="100px" height="60px">
+        <a class="navbar-brand" href="#sec_conferencia">Conf Bs As</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">La Conferencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#sec_conoce_oradores">Los oradores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#sec_lugar_y_fecha">El lugar y la fecha</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#sec_conv_en_orador">Conviértete en orador</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link activeBtn colorGreen" href="#">Comprar tickets</a>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- SECCIÓN TARJETAS DE CATEGORIAS  -->
+    <section class="sec_contenedor_cards">
+
+      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+        <div class="col col_tarjeta">
+          <div class="card tarjeta1 mb-4 rounded-3 shadow-sm">
+
+            <div class="card-body contenedor_text_tarj">
+              <h3 class="card-title text_card pricing-card-title">Estudiante</h3>
+              <h5 class="card-title text_card text pricing-card-title">Tienen un descuento</h5>
+              <h5 class="card-title text_card pricing-card-title">80%</h5>
+              <h6 class="card-title text_card pricing-card-title text-muted">* presentar documentación</h6>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col col_tarjeta">
+          <div class="card tarjeta2 mb-4 rounded-3 shadow-sm">
+   
+            <div class="card-body contenedor_text_tarj">
+              <h3 class="card-title text_card pricing-card-title">Trainee</h3>
+              <h5 class="card-title text_card text pricing-card-title">Tienen un descuento</h5>
+              <h5 class="card-title text_card pricing-card-title">50%</h5>
+              <h6 class="card-title text_card pricing-card-title text-muted">* presentar documentación</h6>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col col_tarjeta">
+          <div class="card tarjeta3 mb-4 rounded-3 shadow-sm">
+      
+            <div class="card-body contenedor_text_tarj">
+              <h3 class="card-title text_card pricing-card-title">Junior</h3>
+              <h5 class="card-title text_card text pricing-card-title">Tienen un descuento</h5>
+              <h5 class="card-title text_card pricing-card-title">15%</h5>
+              <h6 class="card-title text_card pricing-card-title text-muted">* presentar documentación</h6>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </section>  
+
+    <!-- SECCIÓN COMPRAR TICKETS - FORMULARIO -->
+    <section id="sec_formu_ticket" class="sec_formu_ticket">
+
+      <p class="p_tit_ticket">VENTA</p>
+      <h1>VALOR DE TICKET $200</h1>
+
+      <div class="contenedor_formu_ticket">
+        <form action=""> 
+
+          <div class="row cont_nom_ape">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <input id="nombre" type="text" class="form-control nombre_formu_tickets" placeholder="Nombre" aria-label="Nombre" required>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <input id="apellido" type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" required>
+            </div>
+          </div>  
+        
+          <div class="col-12 inputCorreo">
+            <input id="correo" type="email" class="form-control" placeholder="Correo" aria-label="Correo" required>
+          </div>
+
+          <div class="row cont_cant_cate">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <label for="cantidad" class="label_cant">Cantidad</label>  
+              <input id="cantidad" type="number" class="form-control cant_tickets_formu" placeholder="Ingrese cantidad de tickets" aria-label="Cantidad" min="1" required>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <label for="categoria" class="label_cate">Categoria</label>  
+              <select id="categoria" name="categoria" class="form-select">
+                  <option value="" selected>--Seleccione--</option>
+                  <option value="0">Sin Categoria</option>
+                  <option value="1">Estudiante</option>
+                  <option value="2">Trainee</option>
+                  <option value="3">Junior</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="alert alert-primary tot_resultado" role="alert">
+            Total a Pagar:$ <span id="totalPago" class="montoAPagar"></span>
+          </div>
+
+          <div class="row contenedor_btn_formu">    
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <button id="btn_Borrar" class="w-100 btn btn-lg btn-form btn_borrar_formu" type="reset">Borrar</button>
+            </div>
+            
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <button id="btn_Resumen" class="w-100 btn btn-lg btn-form btn_resumen_formu" type="button">Resumen</button>
+            </div>
+          </div>
+
+        </form>  
+      </div>  
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+  
+    <div class="text-center contenedor_footer">
+      
+        <div class="col-sm-12 col-md-6 col-lg-1">
+          <a href="#">Preguntas frecuentes</a>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-2">
+          <a href="#">Contáctanos</a>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-2">
+          <a href="#">Prensa</a>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-2">
+          <a href="#">Conferencias</a>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-1">
+          <a href="#">Términos y condiciones</a>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-2">
+          <a href="#">Privacidad</a>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-1">
+          <a href="#">Estudiantes</a>
+        </div>
+      
+    </div>
+    
+  </footer>
+
+  <script src="../assets/js/comprar_tickets.js"></script> 
+  <script src="../assets/js/bootstrap.min.js"></script> 
+</body>
+</html>

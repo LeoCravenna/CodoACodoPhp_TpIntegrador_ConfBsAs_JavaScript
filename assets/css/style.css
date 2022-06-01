@@ -1,0 +1,632 @@
+* { 
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#principal {
+    height: 100vh;
+}
+
+/*NAVBAR
+-------------------------------------------------- */
+.container-fluid {
+    margin: 0 4rem 0 4rem;
+}
+
+.colorNavbar {
+    background-color: rgb(57, 61, 67);
+}
+
+#navbarCollapse ul li a.colorGreen {
+    color: rgb(76, 186, 8);
+}
+
+#navbarCollapse ul li a.colorGreen:hover {
+    color: rgb(88, 214, 9);
+}
+
+#navbarCollapse ul li a.activeBtn {
+    color: rgb(88, 214, 9);
+}
+
+/*SECCIÓN CONFERENCIA - CAROUSEL
+-------------------------------------------------- */
+.carousel {
+    margin-bottom: 1rem;
+}
+
+.carousel-caption {
+    position: absolute;
+    left: 32rem;
+    top: 25rem;
+    bottom: 10rem;
+    font-size: 1.2rem;
+    text-align: end;
+    z-index: 10;
+}
+  
+.carousel-item {
+    height: 100vh;
+}
+
+.carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 100%;
+    filter:brightness(0.4);
+}
+
+.img1 {
+    background-image: url("../../img/ba1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.img2 {
+    background-image: url("../../img/ba2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.img3 {
+    background-image: url("../../img/ba3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.btn_comprar_ticket {
+    background-color: rgb(51, 155, 51);
+}
+
+.btn_orador {
+    border-color: white;
+    color: white;
+}  
+
+.btn_orador:hover {
+    background-color: #fff;
+    color: rgb(51, 155, 51);
+}
+
+/*SECCIÓN CONOCE A ORADORES - CARDS
+-------------------------------------------------- */
+.sec_conoce_oradores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.p_tit_oradores {
+    margin-bottom: 0.2rem;
+    font-weight: 600;
+}
+
+.contenedor_cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 24rem;
+    margin: 0 1rem 2rem 1rem;
+}
+
+.card-text {
+    font-size: 0.9rem;
+}
+
+/*SECCIÓN LUGAR Y FECHA - PANTALLA DIVIDIDA
+-------------------------------------------------- */
+.sec_lugar_y_fecha {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.contenedor_img_lugar {
+    width: 50%;
+    border: 1px solid #fff;
+}
+
+.contenedor_fecha {
+    width: 50%;
+    background-color: rgb(44, 43, 43);
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 1rem;
+}
+
+.descripcion_fecha {
+    font-size: 1.1rem;
+}
+
+.btn_conoce_mas {
+    border-color: white;
+    color: white;
+}
+
+.btn_conoce_mas:hover {
+    color: rgb(172, 171, 171);
+}
+
+/*SECCIÓN CONVIÉRTETE EN UN ORADOR - FORMULARIO
+-------------------------------------------------- */
+.sec_conv_en_orador {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.p_tit_orador {
+    margin-bottom: 0.2rem;
+    font-weight: 600;
+}
+
+.p_leyenda_orador {
+    font-weight: 600;
+    text-align: justify;
+}
+
+.punteado {
+    text-decoration: underline dotted;
+}
+
+.contenedor_formulario {
+    width: 50%;
+    margin-bottom: 1rem;
+}
+
+.cont_nom_ape {
+    margin-bottom: 1rem;
+}
+
+#descripcion_charla {
+    font-size: 1.5rem;
+}
+
+.leyenda_fin_formu {
+    padding: 0.5rem 0 0.5rem 0;
+    font-weight: 400;
+    color: rgb(114, 113, 113);
+}
+
+.btn_enviar_formu {
+    height: 50px;
+    background-color: rgb(115, 182, 47);
+    font-size: 1.3rem;
+    font-weight: 600;
+    border: none;
+}
+
+.btn_enviar_formu:hover {
+    background-color: rgb(92, 146, 38);
+}
+
+/*SECCIÓN TARJETAS DE CATEGORIAS 
+-------------------------------------------------- */
+.sec_contenedor_cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 7rem;
+}
+
+.col_tarjeta {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tarjeta1 {
+    width: 19.3rem;
+    margin: 0;
+    border: 2px solid rgb(0, 157, 255);
+}
+
+.tarjeta2 {
+    width: 19.3rem;
+    margin: 0;
+    border: 2px solid rgb(19, 171, 161);
+}
+
+.tarjeta3 {
+    width: 19.3rem;
+    margin: 0;
+    border: 2px solid rgb(248, 193, 28);
+}
+
+.contenedor_text_tarj {
+    padding: 0;
+}
+
+.text_card {
+    margin: 2rem 0 2rem 0;
+}
+
+/*SECCIÓN COMPRAR TICKETS - FORMULARIO
+-------------------------------------------------- */
+.sec_formu_ticket {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.p_tit_ticket {
+    margin-bottom: 0.2rem;
+    font-weight: 500;
+}
+
+.contenedor_formu_ticket {
+    width: 50%;
+    margin-top: 15px;
+    margin-bottom: 1rem;
+}
+
+.inputCorreo {
+    margin-bottom: 1rem;
+}
+
+.cont_cant_cate {
+    margin-bottom: 2.5rem;
+}
+
+.label_cant {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.label_cate {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.tot_resultado {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.contenedor_btn_formu {
+    margin-top: 2.5rem;
+}
+
+.btn_borrar_formu {
+    margin-bottom: 0.5rem;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(147, 214, 80);
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border: none;
+}
+
+.btn_borrar_formu:hover {
+    background-color: rgb(146, 38, 38);
+    color: #fff;
+}
+
+.btn_resumen_formu {
+    margin-bottom: 0.5rem;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(147, 214, 80);
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border: none;
+}
+
+.btn_resumen_formu:hover {
+    background-color: rgb(92, 146, 38);
+    color: #fff;
+}
+
+.montoAPagar {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/*FOOTER
+-------------------------------------------------- */
+.contenedor_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to right, #083248, #093850, #0a3d58, #0b4361, #0c4969);
+    padding: 1rem;
+}
+
+.contenedor_footer a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* --------------------------------------------------
+MEDIA QUERY
+-------------------------------------------------- */
+@media screen and (max-width: 1600px) {
+
+    /*SECCIÓN CONVIÉRTETE EN UN ORADOR - FORMULARIO
+    -------------------------------------------------- */
+    .contenedor_formulario {
+        width: 65%;
+    }
+    
+    .cont_nom_ape {
+        margin-bottom: 1rem;
+    }
+    
+    #descripcion_charla {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    
+    /*NAVBAR
+    -------------------------------------------------- */
+    .container-fluid {
+        margin: 0 2rem 0 2rem;
+    }
+
+    /*SECCIÓN PRINCIPAL - CAROUSEL
+    -------------------------------------------------- */
+    .carousel-caption {    
+        left: 15rem;
+    }
+
+    /*SECCIÓN CONVIÉRTETE EN UN ORADOR - FORMULARIO
+    -------------------------------------------------- */
+    .contenedor_formulario {
+        width: 80%;
+    }
+    
+    .cont_nom_ape {
+        margin-bottom: 1rem;
+    }
+    
+    #descripcion_charla {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    
+    /*SECCIÓN PRINCIPAL - CAROUSEL
+    -------------------------------------------------- */
+    .carousel-caption {    
+        left: 15rem;
+        top: 20rem;
+    }
+
+    /*SECCIÓN LUGAR Y FECHA - PANTALLA DIVIDIDA
+    -------------------------------------------------- */
+    .sec_lugar_y_fecha {
+        flex-direction: column;
+    }
+
+    .contenedor_img_lugar {
+        width: 100%;
+    }
+
+    .contenedor_fecha {
+        width: 100%;
+    }
+
+    /*SECCIÓN CONVIÉRTETE EN UN ORADOR - FORMULARIO
+    -------------------------------------------------- */
+    .contenedor_formulario {
+        width: 80%;
+    }
+    
+    .cont_nom_ape {
+        margin-bottom: 1rem;
+    }
+    
+    #descripcion_charla {
+        font-size: 1.5rem;
+    }
+
+}
+  
+
+@media screen and (max-width: 768px) {
+
+    /*NAVBAR
+    -------------------------------------------------- */
+    .container-fluid {
+        margin: 0 1rem 0 1rem;
+    }
+
+    /*SECCIÓN PRINCIPAL - CAROUSEL
+    -------------------------------------------------- */   
+    .carousel-caption {    
+        text-align: center;
+        left: 2rem;
+        right: 2rem;
+        top: 20rem;
+    }
+
+    /*SECCIÓN LUGAR Y FECHA - PANTALLA DIVIDIDA
+    -------------------------------------------------- */
+    .sec_lugar_y_fecha {
+        flex-direction: column;
+    }
+
+    .contenedor_img_lugar {
+        width: 100%;
+    }
+
+    .contenedor_fecha {
+        width: 100%;
+    }
+
+    /*SECCIÓN CONVIÉRTETE EN UN ORADOR - FORMULARIO
+    -------------------------------------------------- */
+    .contenedor_formulario {
+        width: 100%;
+    }
+    
+    .cont_nom_ape {
+        margin-bottom: 1rem;
+    }
+    
+    .nombre_formu_orador {
+        margin-bottom: 1rem;
+    }
+
+    #descripcion_charla {
+        font-size: 1.4rem;
+    }
+
+    /*SECCIÓN COMPRAR TICKETS - FORMULARIO
+    -------------------------------------------------- */
+    .contenedor_formu_ticket {
+        width: 60%;
+    }
+
+    .nombre_formu_tickets {
+        margin-bottom: 1rem;
+    }
+
+    .cant_tickets_formu {
+        margin-bottom: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    /*NAVBAR
+    -------------------------------------------------- */
+    .container-fluid {
+        margin: 0 0.5rem 0 0.5rem;
+    }
+
+    /*SECCIÓN PRINCIPAL - CAROUSEL
+    -------------------------------------------------- */
+    .carousel-caption {    
+        text-align: center;
+        font-size: 1rem;
+        left: 2.2rem;
+        right: 2.2rem;
+        top: 5rem;
+    }
+
+    .carousel-caption > p {    
+        text-align: justify;
+    }
+
+    .carousel-caption > p.btn_carousel {
+        text-align: center;
+    }
+
+    .btn_comprar_ticket {
+        width: 160px;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .btn_orador {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    } 
+
+    /*SECCIÓN LUGAR Y FECHA - PANTALLA DIVIDIDA
+    -------------------------------------------------- */
+    .sec_lugar_y_fecha {
+        flex-direction: column;
+    }
+
+    .contenedor_img_lugar {
+        width: 100%;
+    }
+
+    .contenedor_fecha {
+        width: 100%;
+    }
+
+    .descripcion_fecha {    
+        font-size: 0.8rem;
+    }
+
+    .btn_conoce_mas {
+        font-size: 0.8rem;
+    }
+
+    /*SECCIÓN CONVIÉRTETE EN UN ORADOR - FORMULARIO
+    -------------------------------------------------- */
+    .p_leyenda_orador {
+        padding: 1rem;
+    }
+    
+    .contenedor_formulario {
+        width: 80%;
+    }
+    
+    .cont_nom_ape {
+        margin-bottom: 1rem;
+    }
+    
+    .nombre_formu_orador {
+        margin-bottom: 1rem;
+    }
+
+    #descripcion_charla {
+        font-size: 1.2rem;
+    }
+
+    .leyenda_fin_formu {
+        font-size: 0.8rem;
+    }
+
+    .btn_enviar_formu {
+        font-size: 1.1rem; 
+    }
+
+    /*SECCIÓN COMPRAR TICKETS - FORMULARIO
+    -------------------------------------------------- */
+    .contenedor_formu_ticket {
+        width: 75%;
+    }
+
+    .nombre_formu_tickets {
+        margin-bottom: 1rem;
+    }
+
+    .cant_tickets_formu {
+        margin-bottom: 1rem;
+    }
+
+    /*FOOTER
+    -------------------------------------------------- */
+    .contenedor_footer {
+        flex-direction: column;  
+    }
+}
